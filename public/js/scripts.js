@@ -3,11 +3,10 @@
 // Elementos HTML
 const elEliminarRegistro = document.querySelectorAll('.eliminarRegistro');
 const sltAlumnos = document.querySelector('#sltAlumnos');
-const tbodyHome = document.querySelector('#tbodyHome');
+const tbodyHome = document.querySelector('#tbodyHome') ?? null;
+
 
 document.addEventListener('DOMContentLoaded', function () {
-
-    refrescarTabla(sltAlumnos.value);
 
     elEliminarRegistro.forEach((element) => {
         element.addEventListener('click', (e) => {

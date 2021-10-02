@@ -103,7 +103,7 @@ class MateriaGradoController extends Controller
         return json_encode([
             'success' => true,
             'msg' => 'Eliminada correctamente.',
-            'location' => route('materias.index')
+            'location' => route('materiasxgrado.index')
         ]);
     }
 }

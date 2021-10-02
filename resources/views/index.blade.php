@@ -31,6 +31,8 @@
 @stop
 @section('js')
     <script>
-
+        document.addEventListener('DOMContentLoaded', function() {
+            refrescarTabla(sltAlumnos.value);
+        }, false);
     </script>
 @stop
